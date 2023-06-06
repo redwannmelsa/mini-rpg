@@ -14,7 +14,7 @@ const Enemy: React.FC = () => {
   }, [])
 
 
-  function generateRandomEnemy() {
+  const generateRandomEnemy = () => {
     if (Math.random() < 0.1) {
       setEnemyDmg(7)
       setEnemyHp(100)
@@ -24,11 +24,11 @@ const Enemy: React.FC = () => {
     }
   }
 
-  function generateRandomHP() {
+  const generateRandomHP = () => {
     setEnemyHp(Math.floor(Math.random() * (30 - 15 + 1) + 15))
   }
 
-  function generateRandomenemyDmg() {
+  const generateRandomenemyDmg = () => {
     setEnemyDmg(Math.floor(Math.random() * (5 - 2 + 1) + 2))
   }
 
